@@ -1,0 +1,41 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right,lightblue,blue);
+}
+
+h1 {
+    min-height: 10vh;
+    font-size: 100px;
+    text-align: center;
+    color: darkblue;
+    font-variant: small-caps;
+}
+
+.game-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    max-height: 90vh;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3,200px);
+}
+
+.game-grid .cell {
+    background-color: rgba(255,255,255,0.6);
+    border: 1px solid rgba(0,0,255,0.8);
+    outline: none;
+    cursor: pointer;
+    font-size: 120px;
+    color: darkblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.game-grid .cell:hover {
+    background-color: rgba(255,255,255,0.8);
+}
